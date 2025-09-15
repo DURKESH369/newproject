@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Full‑Stack Developer</title>
+    <meta name="description" content="Full‑stack developer portfolio: projects, experience, skills, and contact." />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="bgCanvas" class="bg-canvas" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#">Your<span>Dev</span></a>
+        <nav class="site-nav" aria-label="Primary">
+          <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
+          <ul id="navMenu" class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero" aria-label="Intro">
+        <div class="container hero-inner">
+          <div class="hero-copy reveal is-visible">
+            <p class="eyebrow">Full‑Stack Developer</p>
+            <h1>Building reliable, scalable, user‑first web products</h1>
+            <p class="lede">I design, build, and ship end‑to‑end web applications with modern JavaScript/TypeScript, Node.js, and cloud‑native tooling.</p>
+            <div class="cta-row">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-art reveal delay-2 is-visible" aria-hidden="true">
+            <div class="blob"></div>
+            <figure class="avatar-wrap">
+              <img
+                class="avatar"
+                src="https://i.pravatar.cc/240?img=3"
+                alt="Your Name portrait"
+                width="240"
+                height="240"
+                loading="eager"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title" class="reveal">About</h2>
+          <p class="reveal delay-1">
+            I'm a full‑stack developer focused on clean architecture, DX, and performance.
+            I turn ideas into production software using pragmatic engineering practices.
+          </p>
+          <ul class="highlights">
+            <li class="reveal delay-1">TypeScript, React/Next.js, Node.js, Express/NestJS</li>
+            <li class="reveal delay-2">PostgreSQL, Prisma/TypeORM, Redis, MongoDB</li>
+            <li class="reveal delay-3">CI/CD, Docker, Kubernetes, Cloud (AWS/GCP/Azure)</li>
+            <li class="reveal delay-4">Testing: Jest, Playwright, Vitest</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title" class="reveal">Skills</h2>
+          <div class="skill-groups">
+            <div class="card reveal">
+              <h3>Frontend</h3>
+              <ul>
+                <li>React, Next.js</li>
+                <li>Vite, Webpack</li>
+                <li>CSS Modules, Tailwind, Sass</li>
+                <li>Accessibility (a11y)</li>
+              </ul>
+            </div>
+            <div class="card reveal delay-1">
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js, Express, NestJS</li>
+                <li>REST, GraphQL, WebSockets</li>
+                <li>AuthN/Z, RBAC, OAuth</li>
+                <li>Testing & Observability</li>
+              </ul>
+            </div>
+            <div class="card reveal delay-2">
+              <h3>DevOps</h3>
+              <ul>
+                <li>Docker, Kubernetes</li>
+                <li>CI/CD (GitHub Actions)</li>
+                <li>Terraform, IaC basics</li>
+                <li>Cloud (AWS/GCP/Azure)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title" class="reveal">Projects</h2>
+          <div class="project-grid">
+            <article class="project card reveal">
+              <div class="project-body">
+                <h3>Project One</h3>
+                <p>Multi‑tenant SaaS with Next.js, tRPC, and PostgreSQL. Stripe billing, RBAC, and audit trails.</p>
+                <ul class="tags">
+                  <li>Next.js</li>
+                  <li>tRPC</li>
+                  <li>Postgres</li>
+                </ul>
+              </div>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </article>
+
+            <article class="project card reveal delay-1">
+              <div class="project-body">
+                <h3>Project Two</h3>
+                <p>Realtime collaboration board using WebSockets, Redis pub/sub, and optimistic UI updates.</p>
+                <ul class="tags">
+                  <li>Node</li>
+                  <li>Redis</li>
+                  <li>WebSockets</li>
+                </ul>
+              </div>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </article>
+
+            <article class="project card reveal delay-2">
+              <div class="project-body">
+                <h3>Project Three</h3>
+                <p>Edge‑rendered marketing site with headless CMS, image optimization, and lighthouse 95+.</p>
+                <ul class="tags">
+                  <li>Next.js</li>
+                  <li>CMS</li>
+                  <li>Vercel</li>
+                </ul>
+              </div>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <h2 id="experience-title" class="reveal">Experience</h2>
+          <ol class="timeline">
+            <li class="reveal">
+              <div>
+                <h3>Senior Full‑Stack Developer — ACME Corp</h3>
+                <p class="meta">2023 — Present • Remote</p>
+                <p>Led migration to micro‑frontends, reduced build times by 40%, and improved availability to 99.95%.</p>
+              </div>
+            </li>
+            <li class="reveal delay-1">
+              <div>
+                <h3>Full‑Stack Engineer — Startup XYZ</h3>
+                <p class="meta">2021 — 2023 • Bengaluru</p>
+                <p>Shipped subscription platform, implemented SSO, and scaled to 50k MAU.</p>
+              </div>
+            </li>
+            <li class="reveal delay-2">
+              <div>
+                <h3>Software Engineer — Freelance</h3>
+                <p class="meta">2019 — 2021 • Remote</p>
+                <p>Delivered 12+ projects end‑to‑end for SMEs, focusing on performance and usability.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title" class="reveal">Contact</h2>
+          <p class="reveal delay-1">I'm open to freelance, full‑time roles, or collaborations. Reach out:</p>
+          <div class="contact-actions reveal delay-2">
+            <a class="btn primary" href="mailto:you@example.com">you@example.com</a>
+            <button class="btn" id="copyEmail" data-email="you@example.com">Copy email</button>
+            <div class="socials" aria-label="Social links">
+              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="Twitter">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>© <span id="year"></span> Your Name. Built with HTML, CSS, and JS.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
